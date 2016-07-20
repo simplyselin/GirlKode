@@ -4,3 +4,4 @@ yesinput = yes+yes
 noinput=no+no
 input= yesinput+noinput
 def quiz(decision)
+end
