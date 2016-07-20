@@ -7,4 +7,9 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  get '/quiz' do
+    erb :quiz 
+  end
+
+
 end
