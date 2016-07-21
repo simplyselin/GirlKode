@@ -1,11 +1,12 @@
-def tally (allnumbers= ["question1", "question2", "question3", "question4", "question5"])
+def tally (allnumbers)
    tally=0
   allnumbers.each do |questions|
-    if questions == yes
+      if questions == "yes"
       tally +=1
-    else
+      else
      tally -=1
- end
+      end
+    end
    return tally
  end
  # yes = 1
@@ -14,11 +15,11 @@ def tally (allnumbers= ["question1", "question2", "question3", "question4", "que
  # noinput=no+no
  # input= yesinput+noinput
  def quiz(tally)
-   if input > 0
+   if tally > 0
      "Based off of your answers, you should decide yes."
-   elsif input < 0
+   elsif tally < 0
      "Based off of your answers, you should decide no."
-   elsif input == 0
+   elsif tally == 0
      "You seem to feel pretty equal about your sides, so you should talk to someone and have them help you with your decision."
    end
   end

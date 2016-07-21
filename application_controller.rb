@@ -13,7 +13,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/process' do
-    @number = tally(params[:question1], params[:question2], params[:question3], params[:question4], params[:question5])
+    @array = [params[:question1], params[:question2], params[:question3], params[:question4], params[:question5]]
+    @number = tally(@array)
     @decision = quiz(@number)
     erb :results
   end
