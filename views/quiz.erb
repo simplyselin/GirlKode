@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Decision Quiz</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class = "row intro">Welcome to the quiz. INTRO</div>
+
+      <div class = "row question">
+            <form action="/process" method="post">
+              <label for="question1">Are you typically confident in your choices?</label>
+              <input type="radio" name="question1" value=yes>Yes<br>
+              <input type="radio" name="question1" value=no>No<br>
+
+              <label for="question1">Do you often feel pressured into doing things depending on the group you are with?</label>
+              <input type="radio" name="question2" value=no>Yes<br>
+              <input type="radio" name="question2" value=yes>No<br>
+
+              <label for="question1">Do you find yourself feeling regretful after making decisions?</label>
+              <input type="radio" name="question3" value=no>Yes<br>
+              <input type="radio" name="question3" value=yes>No<br>
+
+              <label for="question1">Are you willing to be pushed out of your comfort zone?</label>
+              <input type="radio" name="question4" value=yes>Yes<br>
+              <input type="radio" name="question4" value=no>No<br>
+
+              <label for="question1">Do you think too quickly before jumping into something?</label>
+              <input type="radio" name="question5" value=no>Yes<br>
+              <input type="radio" name="question5" value=yes>No<br>
+
+              <input type="submit" value="Let's make this decision!">
+            </form>
+    </div>
+
+  </body>
+</html>
