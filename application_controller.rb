@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require
+require_relative 'models/quizmodel.rb'
 
 class ApplicationController < Sinatra::Base
 
