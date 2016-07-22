@@ -11,14 +11,16 @@ class ApplicationController < Sinatra::Base
   get '/kwk' do
     erb :kwk
   end
+
   get '/about' do
     erb :about
-  ends
+  end
+
   get '/decision' do
     erb :index
   end
 
-  get '/quiz' do
+  get '/' do
     erb :newindex
   end
 
@@ -30,7 +32,7 @@ class ApplicationController < Sinatra::Base
     @array = [params[:question1], params[:question2], params[:question3], params[:question4], params[:question5]]
     @number = tally(@array)
     @decision = quiz(@number)
-    @phonenumber = params[:phone]
+    @phonenumber = params[:number]
     sendmessage("+12562700213", "#{@phonenumber}", "Hello, #{@decision}")
     erb :results
   end
