@@ -8,6 +8,14 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  get '/new' do
+    puts "hello"
+  end
+
+  get '/another' do
+    erb :newindex
+  end
+
   get '/quiz' do
     erb :quiz
   end
