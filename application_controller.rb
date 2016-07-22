@@ -8,7 +8,12 @@ require 'rubygems' # not necessary with ruby 1.9 but included for completeness
 
 class ApplicationController < Sinatra::Base
 
-
+  get '/kwk' do
+    erb :kwk
+  end
+  get '/about' do
+    erb :about
+  ends
   get '/decision' do
     erb :index
   end
@@ -26,7 +31,7 @@ class ApplicationController < Sinatra::Base
     @number = tally(@array)
     @decision = quiz(@number)
     @phonenumber = params[:phone]
-    sendmessage("+12562700213", "+1#{@phonenumber}", "Hello, #{@decision}")
+    sendmessage("+12562700213", "#{@phonenumber}", "Hello, #{@decision}")
     erb :results
   end
 
